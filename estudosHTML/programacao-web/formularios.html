@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <h2>Tag usada para capturar, armazenar e retornar dados de usuariso</h2>
+    <p>
+        Os formularios tabem conhecidos como dados de entradas ou de interação com o 
+        site (area de login ou area de cadastro) estremamente ligado ao Backend e Banco de dados
+    </p>
+    <p>
+        Todo formulario começa com a tag <b>(form)</b> e dentra dela tem uma propriedade <b>action</b> que recebera uma logica do backend para receber os dados  capturados no formulario 
+        <p>Tambem na tag <b>forms</b> existe um atributo chamado <b>method</b> que recebe um valor podendo ser <b>GET ou POST</b> dependendo do tipo de requisição o formulario sera</p>
+        <p>A tag <b>input</b> serve para enviar um dado de entrada e o atributo <i>type</i> descreve o tipo de entrada que sera capturado no imput, por exemplo um <i>text</i> ou texto
+            ele abre um campo para ser digitado alguma coisa, nessa tag existe tambem outra propriedade chamada <i>placeholder</i> e uma especie de marca dagua que indica o que o usuario deve fazer
+        </p>
+        <p>Associado a tag imput usamos a tag <b>label</b> que serve para descrever o que e o campo ou dar sentido a ele, o label tambem pode ser associado diretamente ao seu input nesse caso e so colocar um <b>id com um nome no imput</b></p> e colocar esse nome na propriedade <b>for</b> do label, fazendo isso quendo o label for clicado sera direcionado para o input
+    </p><br>
+
+    <form action="">
+
+        <label for="meu-nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" id = "meu-nome" required><br><br>
+
+
+        <label for="meu-sobrenome">Sobrenome:</label>
+        <input type="text" placeholder="Digite o sobrenone" id="meu-sobrenome">
+        <hr><br>
+
+        <p>Existe outros tipos de input como do <b>tipo senha</b> que recebe como valor na propriedade <i>type</i> um <b>password</b> um caracteristica desse campo e que ele esconde os numeros digitados com bolinhas</p><br>
+
+        <label for="minha-senha">Senha</label>
+        <input type="password" placeholder="Digite a senha" id="minha-senha" required>
+        <hr><br>
+
+        <p>Outro campo muito usado e o campo de <b>Email</b>, para isso e preciso informar o valor da propriedade type como "email" dentro da tag input </p>
+        <label for="meu-email">Email</label>
+        <input type="email" placeholder="Digite seu email" id="meu-email" required>
+        <hr><br>
+        <p>Para tornar o preenchimento desses campos obrigatorios e preciso colocar uma propriedade chamada <b>require</b> na tag <b>input</b> que quer dizer obrigatorio</p>
+
+        <p> Outro <b>input</b> muito importante e o Submit que quer dizer enviar serve para enviar os dados recebidos para o backend ou um serivdor mas para isso e preciso informar no campo <u>type</u> que e do tipo submit,tambem existe uma propriedade que se chama <b>value</b> ela serve para nomear esse botao </p>
+
+        <input type="submit" value="Enviar Formulario">
+    </form><br><hr>
+
+    
+    
+    
+    <nav>
+        <a href="./site/aula-html/index.html">Pagina Inicial</a>
+    </nav>
+</body>
+</html>
