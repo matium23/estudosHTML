@@ -47,6 +47,55 @@
         <p> Outro <b>input</b> muito importante e o Submit que quer dizer enviar serve para enviar os dados recebidos para o backend ou um serivdor mas para isso e preciso informar no campo <u>type</u> que e do tipo submit,tambem existe uma propriedade que se chama <b>value</b> ela serve para nomear esse botao </p>
 
         <input type="submit" value="Enviar Formulario">
+
+        <hr><br>
+
+        <h2>Inputs para multipla escolha</h2>
+
+        <p>
+                Input do tipo <b>radio</b> são muito usados para multiplas escolhas <u>(podendo escolher so uma entre muitas)</u>, pra isso na <u>propriedade</u> <b>type</b> recebe o valor <b>radio</b>, como e uma tag usada para multiplas escolhas todas as opçoes de escolhas devem receber o mesmo valor na propriedade nome e na <u>propriedade</u> <b>value</b> atibuimos um nome que sera atibuido no backend,
+                associado ao radio devemos colocar um label com id para indicar quel opção o radio se refere
+
+        </p>
+        <h3>Possue Animal</h3>
+        
+        <input type="radio" name="animal"value="Cachorro" id="dog">
+        <label for="dog">cachorro</label>
+        <br><br>
+        <input type="radio" name="animal"value="Gato" id="cat">
+        <label for="cat">gato</label>
+        <br><br>
+        <input type="radio" name="animal"value="Peixe" id="fixer">
+        <label for="fixer">Peise</label>
+
+        <hr><br>
+        <p>
+            Um formulario para que se posa escolher varias opções entre muitas e o check box,ao contrario do <u>radio</u> o <b>checkbox</b> tem que ter nomes diferentes na propriedade nome e 
+        </p>
+
+        <h3>Possue veiculo</h3>
+        <input type="checkbox" id="carro" name="car" value="Car">
+        <label for="carro">Carro</label>
+        <br><br>
+        <input type="checkbox" id="moto" name="moto"value="Moto">
+        <label for="moto">moto</label>
+        <br><br>
+        <input type="checkbox" id="bike" name="bicicleta" value="Bike">
+        <label for="bike">bicicleta</label>
+        <hr><br>
+        <h2>Campos do tipo select</h2>
+        <p>A tag <b>select </b> tem abertura e fechamendo e dentro dela e colocada outroa tag <b>option</b> tabmem com abertura e fechamento, na tag <b>option</b> existe uma propriedade <u>name</u> que recebe um valor e esse valor sera mandado para o servidor, entre a abertura e fechamento colocamos o nome que sera exibido na pagina </p>
+
+        <h3>Qual a cor</h3>
+        <select name="red" id="">
+            <option value=""></option>
+            <option value="red">vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="yelow">Amarelo</option>
+            <option value="brown">Marrom</option>
+            <option value="orange">Laranja</option>
+            <option value="green">Verde</option>
+        </select>
     </form><br><hr>
 
     
